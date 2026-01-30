@@ -1,1 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use './styles/tokens';
+@use './styles/typography';
+@use './styles/components';
+
+html {
+  height: 100%;
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+body {
+  color-scheme: light;
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+  margin: 0;
+  height: 100%;
+}
+
+/* Reimii Material Buttons (global) */
+:root{
+  --r-btn-radius: 14px;
+  --r-btn-h: 44px;
+  --r-btn-pad: 18px;
+}
+
+/* Flat / Primary */
+.mdc-button.mat-mdc-unelevated-button{
+  border-radius: var(--r-btn-radius) !important;
+  min-height: var(--r-btn-h) !important;
+  padding: 0 var(--r-btn-pad) !important;
+  font-family: var(--r-font-ui) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  box-shadow: none !important; /* fuera sombras */
+  text-transform: none !important;
+}
+
+/* Stroked */
+.mdc-button.mat-mdc-outlined-button{
+  border-radius: var(--r-btn-radius) !important;
+  min-height: var(--r-btn-h) !important;
+  padding: 0 var(--r-btn-pad) !important;
+  font-family: var(--r-font-ui) !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+}
+
+/* Colores exactos Reimii para botones con color="primary" */
+.mat-mdc-unelevated-button.mat-primary{
+  --mdc-filled-button-container-color: var(--r-teal-700);
+  --mdc-filled-button-label-text-color: #fff;
+}
+.mat-mdc-unelevated-button.mat-primary:hover{
+  --mdc-filled-button-container-color: var(--r-teal-600);
+}
+
+/* Outline primary (stroked) */
+.mat-mdc-outlined-button.mat-primary{
+  --mdc-outlined-button-outline-color: rgba(255,255,255,.75); /* en hero oscuro */
+  --mdc-outlined-button-label-text-color: #fff;
+}
+.mat-mdc-outlined-button.mat-primary:hover{
+  --mdc-outlined-button-outline-color: rgba(255,255,255,.95);
+}
+
+/* Ripple más sutil */
+.mat-mdc-button-ripple, .mat-ripple-element{
+  opacity: 0.15 !important;
+}
+
+.r-btn {
+  border-radius: 14px;
+  padding: 12px 16px;
+  font: 600 14px/1.25 var(--r-font-ui);
+  border: 0;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.r-btn--primary {
+  background: var(--r-teal-700);
+  color: #fff;
+}
+.r-btn--primary:hover,
+.r-btn--primary:active {
+  background: var(--r-teal-600);
+}
+
+.r-btn--secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}

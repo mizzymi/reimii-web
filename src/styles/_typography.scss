@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: var(--r-font-ui);
+  color: var(--r-deep-teal);
+  background:
+    radial-gradient(900px 520px at 50% 35%, rgba(53, 184, 178, 0.22) 0%, rgba(53, 184, 178, 0) 60%),
+    radial-gradient(700px 520px at 50% 65%, rgba(48, 154, 158, 0.18) 0%, rgba(48, 154, 158, 0) 65%),
+    linear-gradient(180deg, #073949 0%, #0a4358 100%);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--r-font-head);
+  line-height: 0.95;
+  font-weight: 400;
+  font-variant: small-caps;
+}
