@@ -1,0 +1,33 @@
+<section class="hero">
+  <div class="hero-inner">
+    <div class="pill">
+      <mat-icon class="pill-ico" aria-hidden="true">auto_awesome</mat-icon>
+      <span>{{ pillText }}</span>
+    </div>
+
+    <img class="mark-img" [src]="logoSrc" alt="REIMII" />
+
+    <p class="lead">
+      Juegos compactos y rejugables. Apps de utilidad sin fricción.<br />
+      <strong>Limpios, rápidos, accesibles.</strong>
+    </p>
+
+    <div class="cta">
+      <a mat-flat-button disableRipple class="btn btn-primary" [routerLink]="primaryCtaLink">
+        {{ primaryCtaText }} <span class="chev" aria-hidden="true">›</span>
+      </a>
+
+      <a mat-stroked-button disableRipple class="btn btn-secondary" [routerLink]="secondaryCtaLink">
+        <mat-icon class="play" aria-hidden="true">play_arrow</mat-icon>
+        <span>{{ secondaryCtaText }}</span>
+      </a>
+    </div>
+
+    <div class="stats" aria-label="Métricas del estudio">
+      <div class="stat" *ngFor="let s of stats">
+        <div class="stat-num">{{ s.value }}</div>
+        <div class="stat-label">{{ s.label }}</div>
+      </div>
+    </div>
+  </div>
+</section>

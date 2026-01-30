@@ -8,7 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(241, 251, 253, 0.85);
+  background: rgba(241, 251, 253, 0.25);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(10, 67, 88, 0.1);
 }
@@ -35,12 +35,12 @@
 .nav a {
   font-family: var(--r-font-ui);
   text-decoration: none;
-  color: var(--r-deep-teal);
+  color: var(--r-ice-bg);
   padding: 8px 10px;
   border-radius: 12px;
 }
 .nav a.active {
-  background: var(--r-teal-700);
+  background: var(--r-deep-teal);
   color: #fff;
 }
 
@@ -50,7 +50,8 @@
     radial-gradient(900px 520px at 50% 35%, rgba(53, 184, 178, 0.22) 0%, rgba(53, 184, 178, 0) 60%),
     radial-gradient(700px 520px at 50% 65%, rgba(48, 154, 158, 0.18) 0%, rgba(48, 154, 158, 0) 65%),
     linear-gradient(180deg, #073949 0%, #0a4358 100%);
-  min-height: calc(100dvh - 64px);
+  min-height: calc(100dvh - 65px);
+  color: var(--r-ice-100);
 }
 
 .footer {

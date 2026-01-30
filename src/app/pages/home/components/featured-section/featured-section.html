@@ -1,0 +1,48 @@
+<section class="featured">
+  <header class="featured-head">
+    <div class="titleblock">
+      <p class="eyebrow">DESTACADOS</p>
+      <h2 class="bigtitle">
+        <span class="line1">{{ titleLine1 }}</span>
+        <span class="line2">{{ titleLine2 }}</span>
+      </h2>
+    </div>
+
+    <a class="viewall" [routerLink]="viewAllLink">
+      Ver todos <span class="arrow" aria-hidden="true">→</span>
+    </a>
+  </header>
+
+  <div class="cards">
+    <a
+      class="card"
+      *ngFor="let item of items; trackBy: trackById"
+      [routerLink]="item.link"
+      [attr.aria-label]="'Abrir ' + item.name"
+    >
+      <div class="media">
+        <img [src]="item.image" [alt]="item.name" />
+
+        <span class="badge" [class.badge--soon]="isSoon(item)">
+          {{ item.availability }}
+        </span>
+
+        <span class="corner-ico" aria-hidden="true">
+          <mat-icon>{{ item.kindIcon }}</mat-icon>
+        </span>
+
+        <span class="rating"><span class="star">★</span> {{ item.rating }}</span>
+      </div>
+
+      <div class="body">
+        <h3 class="name">{{ item.name }}</h3>
+        <p class="meta">{{ item.category }}</p>
+        <p class="desc">{{ item.description }}</p>
+
+        <div class="chips">
+          <span class="chip" *ngFor="let c of item.chips">{{ c }}</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
