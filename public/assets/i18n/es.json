@@ -1,0 +1,98 @@
+{
+  "appDetail": {
+    "screenshots": "CAPTURAS",
+    "description": "DESCRIPCIÓN",
+    "features": "CARACTERÍSTICAS"
+  },
+  "home": {
+    "hero": {
+      "pill": "Juegos y apps que respetan tu tiempo",
+      "lead1": "Juegos compactos y rejugables. Apps de utilidad sin fricción.",
+      "lead2": "Limpios, rápidos, accesibles.",
+      "ctaGames": "Ver Juegos",
+      "ctaMore": "Conocer más",
+      "metricsAria": "Métricas del estudio"
+    },
+    "stats": {
+      "games": "Juegos lanzados",
+      "downloads": "Descargas",
+      "rating": "Rating promedio",
+      "team": "Equipo creativo"
+    },
+    "featured": {
+      "eyebrow": "DESTACADOS",
+      "appsLine1": "APPS",
+      "appsLine2": "PRINCIPALES",
+      "gamesLine1": "JUEGOS",
+      "gamesLine2": "PRINCIPALES",
+      "viewAll": "Ver todos"
+    }
+  },
+  "featured": {
+    "availability": {
+      "available": "Disponible",
+      "comingSoon": "Próximamente",
+      "beta": "Beta"
+    },
+    "apps": {
+      "app-ecopulse": {
+        "category": "Economía",
+        "tagline": "Cuentas conjuntas, gastos fijos e ingresos — todo claro en un solo panel.",
+        "description": "Gestión simple de finanzas personales y compartidas: cuentas conjuntas, gastos fijos, ingresos y notas por movimiento.",
+        "longDescription": "EcoPulse te permite llevar un control completo de tus finanzas sostenibles y del día a día. Puedes crear cuentas conjuntas para anotar dinero compartido (tanto en efectivo como en tarjeta) y guardar el motivo de cada gasto para recordarlo fácilmente. Además, puedes registrar gastos mensuales permanentes (suscripciones, alquiler, facturas), añadir ingresos y ver tu balance con claridad para tomar mejores decisiones.",
+        "features": {
+          "0": "Cuentas conjuntas para dinero compartido (efectivo y tarjeta).",
+          "1": "Motivo del gasto y notas rápidas para cada movimiento.",
+          "2": "Gastos mensuales permanentes (suscripciones, facturas, alquiler…).",
+          "3": "Registro de ingresos y control de balance.",
+          "4": "Resumen visual por periodos y categorías para detectar patrones."
+        },
+        "chips": {
+          "android": "Android"
+        }
+      },
+      "app-habit-tracker": {
+        "category": "Hábitos",
+        "tagline": "Rutinas simples y estadísticas claras para no perder el ritmo.",
+        "description": "Rutinas simples, recordatorios suaves y estadísticas claras para mantener el ritmo.",
+        "longDescription": "Habit Tracker te ayuda a construir constancia con un flujo rápido: crea hábitos, marca tu progreso y revisa tus rachas sin complicaciones. Incluye recordatorios opcionales y métricas fáciles de entender para mejorar semana a semana.",
+        "features": {
+          "0": "Creación rápida de hábitos con objetivos diarios o semanales.",
+          "1": "Rachas y progreso visual por calendario.",
+          "2": "Recordatorios configurables y notificaciones suaves.",
+          "3": "Estadísticas simples para ver evolución y consistencia.",
+          "4": "Etiquetas y notas para personalizar cada hábito."
+        },
+        "chips": {
+          "android": "Android"
+        }
+      },
+      "app-aura-mood-tracker": {
+        "category": "Bienestar",
+        "tagline": "Registra tu ánimo y descubre patrones con insights semanales.",
+        "description": "Registro de ánimo con insights: patrones, notas rápidas y tendencias semanales.",
+        "longDescription": "Aura Mood Tracker te permite registrar tu estado de ánimo en segundos, añadir notas y detectar tendencias con resúmenes semanales. Ideal para entender patrones, identificar desencadenantes y mejorar tu bienestar con datos simples y privados.",
+        "features": {
+          "0": "Registro rápido de ánimo con niveles personalizables.",
+          "1": "Notas y etiquetas para contexto (sueño, estrés, eventos…).",
+          "2": "Tendencias semanales y resúmenes automáticos.",
+          "3": "Búsqueda por fechas y filtrado por etiquetas.",
+          "4": "Privacidad por diseño (tus datos son tuyos)."
+        },
+        "chips": {
+          "android": "Android"
+        }
+      }
+    },
+    "games": {
+      "game-akaladrom": {
+        "category": "RPG / Mundo abierto",
+        "description": "RPG de mundo abierto con multijugador: explora, progresa y juega con amigos en sesiones compartidas.",
+        "chips": {
+          "pc": "PC",
+          "android": "Android"
+        }
+      }
+    }
+  }
+}

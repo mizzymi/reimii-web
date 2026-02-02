@@ -1,1 +1,25 @@
-<p>apps works!</p>
+<section class="apps">
+  <h1>Apps</h1>
+
+  <div class="grid">
+    <a class="card" *ngFor="let app of apps; trackBy: trackById" [routerLink]="['/apps', app.id]">
+      <div class="media">
+        <img [src]="app.image" [alt]="app.name" />
+        <span class="badge">{{ app.availability | transloco }}</span>
+        <span class="corner-ico" aria-hidden="true">
+          <mat-icon>{{ app.kindIcon }}</mat-icon>
+        </span>
+      </div>
+
+      <div class="body">
+        <h3>{{ app.name }}</h3>
+        <p class="meta">{{ app.category | transloco }}</p>
+        <p class="desc">{{ app.description | transloco }}</p>
+
+        <div class="chips">
+          <span class="chip" *ngFor="let c of app.chips">{{ c | transloco }}</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>

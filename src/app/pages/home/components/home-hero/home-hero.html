@@ -2,31 +2,31 @@
   <div class="hero-inner">
     <div class="pill">
       <mat-icon class="pill-ico" aria-hidden="true">auto_awesome</mat-icon>
-      <span>{{ pillText }}</span>
+      <span>{{ pillText | transloco }}</span>
     </div>
 
     <img class="mark-img" [src]="logoSrc" alt="REIMII" />
 
     <p class="lead">
-      Juegos compactos y rejugables. Apps de utilidad sin fricción.<br />
-      <strong>Limpios, rápidos, accesibles.</strong>
+      {{ 'home.hero.lead1' | transloco }}<br />
+      <strong>{{ 'home.hero.lead2' | transloco }}</strong>
     </p>
 
     <div class="cta">
       <a mat-flat-button disableRipple class="btn btn-primary" [routerLink]="primaryCtaLink">
-        {{ primaryCtaText }} <span class="chev" aria-hidden="true">›</span>
+        {{ primaryCtaText | transloco }} <span class="chev" aria-hidden="true">›</span>
       </a>
 
       <a mat-stroked-button disableRipple class="btn btn-secondary" [routerLink]="secondaryCtaLink">
         <mat-icon class="play" aria-hidden="true">play_arrow</mat-icon>
-        <span>{{ secondaryCtaText }}</span>
+        <span>{{ secondaryCtaText | transloco }}</span>
       </a>
     </div>
 
-    <div class="stats" aria-label="Métricas del estudio">
+    <div class="stats" [attr.aria-label]="'home.hero.metricsAria' | transloco">
       <div class="stat" *ngFor="let s of stats">
         <div class="stat-num">{{ s.value }}</div>
-        <div class="stat-label">{{ s.label }}</div>
+        <div class="stat-label">{{ s.label | transloco }}</div>
       </div>
     </div>
   </div>

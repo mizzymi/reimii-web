@@ -1,4 +1,7 @@
-export type Availability = 'Disponible' | 'Próximamente';
+export type AvailabilityKey =
+    | 'featured.availability.available'
+    | 'featured.availability.comingSoon'
+    | 'featured.availability.beta';
 
 export type FeaturedItem = {
     id: string;
@@ -7,8 +10,15 @@ export type FeaturedItem = {
     description: string;
     chips: string[];
     image: string;
-    availability: Availability;
+    availability: AvailabilityKey;
     rating: number;
     kindIcon: string;
     link: string;
+};
+
+export type AppExtended = FeaturedItem & {
+  tagline?: string;
+  longDescription?: string;
+  features?: string[];
+  screenshots: string[];
 };

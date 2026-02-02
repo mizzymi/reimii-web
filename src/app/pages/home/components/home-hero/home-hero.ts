@@ -3,30 +3,31 @@ import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { NgFor } from '@angular/common';
+import { TranslocoPipe } from '@ngneat/transloco';
 
 type Stat = { value: string; label: string };
 
 @Component({
   selector: 'app-home-hero',
   standalone: true,
-  imports: [RouterLink, MatIconModule, MatButtonModule, NgFor],
+  imports: [RouterLink, MatIconModule, MatButtonModule, NgFor, TranslocoPipe],
   templateUrl: './home-hero.html',
   styleUrl: './home-hero.scss',
 })
 export class HomeHero {
-  @Input() pillText = 'Juegos y apps que respetan tu tiempo';
-  @Input() logoSrc = 'assets/logo-text.png';
+  @Input() pillText = 'home.hero.pill';
+  @Input() logoSrc = 'logo-text.png';
 
-  @Input() primaryCtaText = 'Ver Juegos';
+  @Input() primaryCtaText = 'home.hero.ctaGames';
   @Input() primaryCtaLink = '/games';
 
-  @Input() secondaryCtaText = 'Conocer más';
+  @Input() secondaryCtaText = 'home.hero.ctaMore';
   @Input() secondaryCtaLink = '/studio';
 
   @Input() stats: Stat[] = [
-    { value: '5+', label: 'Juegos lanzados' },
-    { value: '1K+', label: 'Descargas' },
-    { value: '4.8', label: 'Rating promedio' },
-    { value: '25+', label: 'Equipo creativo' },
+    { value: '3+', label: 'home.stats.games' },
+    { value: '10+', label: 'home.stats.downloads' },
+    { value: '4.8', label: 'home.stats.rating' },
+    { value: '2', label: 'home.stats.team' },
   ];
 }

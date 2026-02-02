@@ -1,7 +1,7 @@
 <section class="featured">
   <header class="featured-head">
     <div class="titleblock">
-      <p class="eyebrow">DESTACADOS</p>
+      <p class="eyebrow">{{ 'home.featured.eyebrow' | transloco }}</p>
       <h2 class="bigtitle">
         <span class="line1">{{ titleLine1 }}</span>
         <span class="line2">{{ titleLine2 }}</span>
@@ -9,7 +9,7 @@
     </div>
 
     <a class="viewall" [routerLink]="viewAllLink">
-      Ver todos <span class="arrow" aria-hidden="true">→</span>
+      {{ 'home.featured.viewAll' | transloco }} <span class="arrow" aria-hidden="true">→</span>
     </a>
   </header>
 
@@ -23,8 +23,8 @@
       <div class="media">
         <img [src]="item.image" [alt]="item.name" />
 
-        <span class="badge" [class.badge--soon]="isSoon(item)">
-          {{ item.availability }}
+        <span class="badge" [class.badge--soon]="isSoon(item)" [class.badge--beta]="isBeta(item)">
+          {{ item.availability | transloco }}
         </span>
 
         <span class="corner-ico" aria-hidden="true">
@@ -36,11 +36,11 @@
 
       <div class="body">
         <h3 class="name">{{ item.name }}</h3>
-        <p class="meta">{{ item.category }}</p>
-        <p class="desc">{{ item.description }}</p>
+        <p class="meta">{{ item.category | transloco }}</p>
+        <p class="desc">{{ item.description | transloco }}</p>
 
         <div class="chips">
-          <span class="chip" *ngFor="let c of item.chips">{{ c }}</span>
+          <span class="chip" *ngFor="let c of item.chips">{{ c | transloco }}</span>
         </div>
       </div>
     </a>

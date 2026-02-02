@@ -21,6 +21,7 @@ body {
   color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
   margin: 0;
+  max-width: 100dvw;
   height: 100%;
 }
 
@@ -100,4 +101,8 @@ body {
   background: transparent;
   color: #fff;
   border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+img {
+  user-select: none;
 }

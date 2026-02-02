@@ -1,0 +1,98 @@
+{
+  "appDetail": {
+    "screenshots": "SCREENSHOTS",
+    "description": "DESCRIPTION",
+    "features": "FEATURES"
+  },
+  "home": {
+    "hero": {
+      "pill": "Games and apps that respect your time",
+      "lead1": "Compact, replayable games. Frictionless utility apps.",
+      "lead2": "Clean, fast, accessible.",
+      "ctaGames": "View Games",
+      "ctaMore": "Learn more",
+      "metricsAria": "Studio metrics"
+    },
+    "stats": {
+      "games": "Games released",
+      "downloads": "Downloads",
+      "rating": "Average rating",
+      "team": "Creative team"
+    },
+    "featured": {
+      "eyebrow": "FEATURED",
+      "appsLine1": "TOP",
+      "appsLine2": "APPS",
+      "gamesLine1": "TOP",
+      "gamesLine2": "GAMES",
+      "viewAll": "View all"
+    }
+  },
+  "featured": {
+    "availability": {
+      "available": "Available",
+      "comingSoon": "Coming soon",
+      "beta": "Beta"
+    },
+    "apps": {
+      "app-ecopulse": {
+        "category": "Finance",
+        "tagline": "Shared accounts, recurring expenses, and income — everything clear in one dashboard.",
+        "description": "Simple personal and shared finance management: joint accounts, recurring expenses, income, and notes per transaction.",
+        "longDescription": "EcoPulse helps you keep full control of your day-to-day finances. You can create shared accounts to track joint money (both cash and card) and save the reason for each expense so you always remember what it was for. You can also log recurring monthly expenses (subscriptions, rent, bills), add income, and view your balance clearly to make better decisions.",
+        "features": {
+          "0": "Shared accounts for joint money (cash and card).",
+          "1": "Expense reason and quick notes for every transaction.",
+          "2": "Recurring monthly expenses (subscriptions, bills, rent…).",
+          "3": "Income tracking and balance overview.",
+          "4": "Visual summaries by period and category to spot patterns."
+        },
+        "chips": {
+          "android": "Android"
+        }
+      },
+      "app-habit-tracker": {
+        "category": "Habits",
+        "tagline": "Simple routines and clear stats to keep you on track.",
+        "description": "Simple routines, gentle reminders, and clear stats to maintain your momentum.",
+        "longDescription": "Habit Tracker helps you build consistency with a fast, simple flow: create habits, check in daily, and review your streaks without friction. It includes optional reminders and easy-to-understand metrics so you can improve week by week.",
+        "features": {
+          "0": "Quick habit creation with daily or weekly goals.",
+          "1": "Streaks and visual progress with a calendar view.",
+          "2": "Custom reminders and gentle notifications.",
+          "3": "Simple stats to track growth and consistency.",
+          "4": "Tags and notes to personalize each habit."
+        },
+        "chips": {
+          "android": "Android"
+        }
+      },
+      "app-aura-mood-tracker": {
+        "category": "Wellness",
+        "tagline": "Track your mood and uncover patterns with weekly insights.",
+        "description": "Mood tracking with insights: patterns, quick notes, and weekly trends.",
+        "longDescription": "Aura Mood Tracker lets you log your mood in seconds, add notes, and spot trends with weekly summaries. Ideal for understanding patterns, identifying triggers, and improving your wellbeing with simple, private data.",
+        "features": {
+          "0": "Fast mood logging with customizable levels.",
+          "1": "Notes and tags for context (sleep, stress, events…).",
+          "2": "Weekly trends and automatic summaries.",
+          "3": "Search by date and filtering by tags.",
+          "4": "Privacy by design (your data stays yours)."
+        },
+        "chips": {
+          "android": "Android"
+        }
+      }
+    },
+    "games": {
+      "game-akaladrom": {
+        "category": "RPG / Open world",
+        "description": "Open-world multiplayer RPG: explore, level up, and play with friends in shared sessions.",
+        "chips": {
+          "pc": "PC",
+          "android": "Android"
+        }
+      }
+    }
+  }
+}

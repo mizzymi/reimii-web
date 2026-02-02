@@ -1,7 +1,7 @@
 .hero {
   display: grid;
   place-items: center;
-  padding: 48px 0 100px;
+  padding: 105px 0;
 }
 
 .hero-inner {
@@ -49,7 +49,7 @@
 
 @media (max-width: 860px) {
   .mark-img {
-    width: min(520px, 92vw);
+    width: min(520px, 80vw);
   }
 }
 /* lead */
