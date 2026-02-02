@@ -2,14 +2,18 @@
   <header class="featured-head">
     <div class="titleblock">
       <h2 class="bigtitle">
-        <span class="line1">GAMES</span>
+        <span class="line1">{{ 'navBar.games' | transloco }}</span>
         <span class="line2">REIMII</span>
       </h2>
     </div>
   </header>
 
   <div class="grid">
-    <a class="card" *ngFor="let game of games; trackBy: trackById" [routerLink]="['/games', game.id]">
+    <a
+      class="card"
+      *ngFor="let game of games; trackBy: trackById"
+      [routerLink]="['/games', game.id]"
+    >
       <div class="media">
         <img [src]="game.image" [alt]="game.name" />
         <span class="badge" [class.badge--soon]="isSoon(game)" [class.badge--beta]="isBeta(game)">{{
