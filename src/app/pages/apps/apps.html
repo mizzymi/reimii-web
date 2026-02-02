@@ -1,11 +1,20 @@
 <section class="apps">
-  <h1>Apps</h1>
+  <header class="featured-head">
+    <div class="titleblock">
+      <h2 class="bigtitle">
+        <span class="line1">APPS</span>
+        <span class="line2">REIMII</span>
+      </h2>
+    </div>
+  </header>
 
   <div class="grid">
     <a class="card" *ngFor="let app of apps; trackBy: trackById" [routerLink]="['/apps', app.id]">
       <div class="media">
         <img [src]="app.image" [alt]="app.name" />
-        <span class="badge">{{ app.availability | transloco }}</span>
+        <span class="badge" [class.badge--soon]="isSoon(app)" [class.badge--beta]="isBeta(app)">{{
+          app.availability | transloco
+        }}</span>
         <span class="corner-ico" aria-hidden="true">
           <mat-icon>{{ app.kindIcon }}</mat-icon>
         </span>

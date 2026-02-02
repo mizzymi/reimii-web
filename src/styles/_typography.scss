@@ -6,13 +6,24 @@ body {
     radial-gradient(900px 520px at 50% 35%, rgba(53, 184, 178, 0.22) 0%, rgba(53, 184, 178, 0) 60%),
     radial-gradient(700px 520px at 50% 65%, rgba(48, 154, 158, 0.18) 0%, rgba(48, 154, 158, 0) 65%),
     linear-gradient(180deg, #073949 0%, #0a4358 100%);
+    font-size: 1.3rem;
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--r-font-head);
   line-height: 0.95;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  font-family: var(--r-font-head);
   font-weight: 400;
-  font-variant: small-caps;
+}
+
+h3 {
+  font-size: 20px;
+  color: rgba(193, 228, 238, 0.55);
+  font-weight: 800;
 }

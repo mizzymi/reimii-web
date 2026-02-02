@@ -132,14 +132,19 @@
   font-family: var(--r-font-ui);
   font-size: 12px;
   font-weight: 800;
-  color: rgba(193, 228, 238, 0.92);
+  color: rgba(255, 255, 255, 0.92);
   background: rgba(10, 67, 88, 0.55);
   border: 1px solid rgba(193, 228, 238, 0.14);
   backdrop-filter: blur(10px);
 }
 .badge--soon {
-  background: rgba(33, 110, 126, 0.35);
-  border-color: rgba(53, 184, 178, 0.18);
+  background: rgba(223, 26, 26, 0.35);
+  border-color: rgba(255, 0, 0, 0.18);
+}
+
+.badge--beta {
+  background: rgba(26, 223, 43, 0.35);
+  border-color: rgba(30, 255, 0, 0.18);
 }
 
 .corner-ico {
@@ -186,12 +191,9 @@
 }
 
 .name {
-  margin: 0;
-  font-family: var(--r-font-head);
-  font-size: 18px;
-  line-height: 1.05;
   color: rgba(193, 228, 238, 0.95);
 }
+
 .meta {
   margin: 6px 0 0;
   font-family: var(--r-font-ui);

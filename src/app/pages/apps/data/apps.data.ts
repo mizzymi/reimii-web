@@ -56,7 +56,7 @@ export const appsFeatured: AppExtended[] = [
     description: 'featured.apps.app-aura-mood-tracker.description',
     chips: ['featured.apps.app-aura-mood-tracker.chips.android'],
     image: 'assets/demo/app-3/app-3.png',
-    availability: 'featured.availability.comingSoon',
+    availability: 'featured.availability.available',
     rating: 4.6,
     kindIcon: 'mood',
     link: '/apps/app-aura-mood-tracker',
