@@ -7,13 +7,21 @@
     </a>
 
     <nav class="nav" aria-label="Main navigation">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
-        >Inicio</a
-      >
-      <a routerLink="/apps" routerLinkActive="active">Apps</a>
-      <a routerLink="/games" routerLinkActive="active">Juegos</a>
-      <a routerLink="/studio" routerLinkActive="active">Nosotros</a>
-      <a routerLink="/contact" routerLinkActive="active">Contacto</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{
+        'navBar.home' | transloco
+      }}</a>
+      <a routerLink="/apps" (click)="closeMobile()" routerLinkActive="active">{{
+        'navBar.apps' | transloco
+      }}</a>
+      <a routerLink="/games" (click)="closeMobile()" routerLinkActive="active">{{
+        'navBar.games' | transloco
+      }}</a>
+      <a routerLink="/studio" (click)="closeMobile()" routerLinkActive="active">{{
+        'navBar.about' | transloco
+      }}</a>
+      <a routerLink="/contact" (click)="closeMobile()" routerLinkActive="active">{{
+        'navBar.contact' | transloco
+      }}</a>
       <div class="lang">
         <button
           #langBtn
@@ -61,12 +69,20 @@
         (click)="closeMobile()"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
-        >Inicio</a
+        >{{ 'navBar.home' | transloco }}</a
       >
-      <a routerLink="/apps" (click)="closeMobile()" routerLinkActive="active">Apps</a>
-      <a routerLink="/games" (click)="closeMobile()" routerLinkActive="active">Juegos</a>
-      <a routerLink="/studio" (click)="closeMobile()" routerLinkActive="active">Nosotros</a>
-      <a routerLink="/contact" (click)="closeMobile()" routerLinkActive="active">Contacto</a>
+      <a routerLink="/apps" (click)="closeMobile()" routerLinkActive="active">{{
+        'navBar.apps' | transloco
+      }}</a>
+      <a routerLink="/games" (click)="closeMobile()" routerLinkActive="active">{{
+        'navBar.games' | transloco
+      }}</a>
+      <a routerLink="/studio" (click)="closeMobile()" routerLinkActive="active">{{
+        'navBar.about' | transloco
+      }}</a>
+      <a routerLink="/contact" (click)="closeMobile()" routerLinkActive="active">{{
+        'navBar.contact' | transloco
+      }}</a>
     </nav>
     <div class="mobile-lang">
       <button type="button" class="mobile-lang-btn" (click)="setLang('es')">

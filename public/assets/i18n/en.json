@@ -1,4 +1,11 @@
-{
+{ 
+  "navBar": {
+    "home": "Home",
+    "apps": "Apps",
+    "games": "Games",
+    "about": "About us",
+    "contact": "Contact us"
+  },
   "appDetail": {
     "screenshots": "SCREENSHOTS",
     "description": "DESCRIPTION",

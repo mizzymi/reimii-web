@@ -1,4 +1,11 @@
 {
+  "navBar": {
+    "home": "Inicio",
+    "apps": "Apps",
+    "games": "Juegos",
+    "about": "Nosotros",
+    "contact": "Contacta"
+  },
   "appDetail": {
     "screenshots": "CAPTURAS",
     "description": "DESCRIPCIÓN",

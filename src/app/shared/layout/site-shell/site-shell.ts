@@ -2,12 +2,12 @@ import { NgIf } from '@angular/common';
 import { isPlatformBrowser } from '@angular/common';
 import { Component, HostListener, ElementRef, ViewChild, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { TranslocoService } from '@ngneat/transloco';
+import { TranslocoPipe, TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-site-shell',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, NgIf],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, NgIf, TranslocoPipe],
   templateUrl: './site-shell.html',
   styleUrl: './site-shell.scss',
 })
