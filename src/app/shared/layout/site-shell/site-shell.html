@@ -14,6 +14,24 @@
       <a routerLink="/games" routerLinkActive="active">Juegos</a>
       <a routerLink="/studio" routerLinkActive="active">Nosotros</a>
       <a routerLink="/contact" routerLinkActive="active">Contacto</a>
+      <div class="lang">
+        <button
+          #langBtn
+          class="lang-btn"
+          type="button"
+          (click)="toggleLangMenu()"
+          [attr.aria-expanded]="langOpen"
+          aria-label="Language"
+        >
+          <span class="lang-code">{{ activeLang.toUpperCase() }}</span>
+          <span class="lang-caret" aria-hidden="true">▾</span>
+        </button>
+
+        <div #langMenu class="lang-menu" *ngIf="langOpen">
+          <button type="button" class="lang-item" (click)="setLang('es')">ES</button>
+          <button type="button" class="lang-item" (click)="setLang('en')">EN</button>
+        </div>
+      </div>
     </nav>
 
     <button
@@ -50,6 +68,14 @@
       <a routerLink="/studio" (click)="closeMobile()" routerLinkActive="active">Nosotros</a>
       <a routerLink="/contact" (click)="closeMobile()" routerLinkActive="active">Contacto</a>
     </nav>
+    <div class="mobile-lang">
+      <button type="button" class="mobile-lang-btn" (click)="setLang('es')">
+        Español <span *ngIf="activeLang === 'es'">✓</span>
+      </button>
+      <button type="button" class="mobile-lang-btn" (click)="setLang('en')">
+        English <span *ngIf="activeLang === 'en'">✓</span>
+      </button>
+    </div>
   </div>
 </header>
 

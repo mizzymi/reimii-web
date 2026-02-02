@@ -1,0 +1,109 @@
+<section *ngIf="game; else notFound" class="game-detail">
+  <a class="back" routerLink="/games">← Volver</a>
+
+  <header class="hero">
+    <img class="cover" [src]="game.image" [alt]="game.name" />
+
+    <div class="info">
+      <h1>{{ game.name }}</h1>
+      <p class="meta">{{ game.category | transloco }}</p>
+
+      <div class="badges">
+        <span class="badge" [class.badge--soon]="isSoon(game)" [class.badge--beta]="isBeta(game)">
+          {{ game.availability | transloco }}
+        </span>
+
+        <span class="badge"> <span class="star">★</span> {{ game.rating }} </span>
+      </div>
+
+      <p class="desc">{{ game.description | transloco }}</p>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="section" *ngIf="game.features?.length">
+      <h3>{{ 'appDetail.features' | transloco }}</h3>
+      <ul class="features">
+        <li *ngFor="let f of game.features">{{ f | transloco }}</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>{{ 'appDetail.description' | transloco }}</h3>
+      <p class="long" *ngIf="game.longDescription">
+        {{ game.longDescription | transloco }}
+      </p>
+    </div>
+  </section>
+  <div class="section" *ngIf="game.screenshots.length">
+    <div class="shots-head">
+      <h3>{{ 'appDetail.screenshots' | transloco }}</h3>
+    </div>
+
+    <div class="carousel" #carousel (scroll)="onCarouselScroll()">
+      <button
+        class="shot"
+        type="button"
+        *ngFor="let s of game.screenshots; let i = index"
+        (click)="selectIndex(i); openLightbox(i)"
+        [class.is-active]="i === activeIndex"
+        [class.is-near]="i === activeIndex - 1 || i === activeIndex + 1"
+      >
+        <img [src]="s" alt="" />
+      </button>
+    </div>
+
+    <div class="shots-actions">
+      <button class="shots-btn" type="button" (click)="prevShot()" aria-label="Previous screenshot">
+        ‹
+      </button>
+      <button class="shots-btn" type="button" (click)="nextShot()" aria-label="Next screenshot">
+        ›
+      </button>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div
+    class="lightbox"
+    *ngIf="lightboxOpen && game.screenshots.length"
+    (click)="closeLightbox()"
+    role="dialog"
+    aria-modal="true"
+  >
+    <button class="lightbox-close" type="button" (click)="closeLightbox()" aria-label="Close">
+      ×
+    </button>
+
+    <button
+      class="lightbox-nav lightbox-prev"
+      type="button"
+      (click)="lightboxPrev($event)"
+      aria-label="Previous"
+    >
+      ‹
+    </button>
+
+    <img
+      class="lightbox-img"
+      [src]="game.screenshots[lightboxIndex]"
+      alt=""
+      (click)="$event.stopPropagation()"
+    />
+
+    <button
+      class="lightbox-nav lightbox-next"
+      type="button"
+      (click)="lightboxNext($event)"
+      aria-label="Next"
+    >
+      ›
+    </button>
+  </div>
+</section>
+
+<ng-template #notFound>
+  <section class="game-detail">
+    <a class="back" routerLink="/games">← Volver</a>
+    <h2>Game no encontrada</h2>
+    <p>El id no existe.</p>
+  </section>
+</ng-template>

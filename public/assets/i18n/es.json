@@ -87,7 +87,16 @@
     "games": {
       "game-akaladrom": {
         "category": "RPG / Mundo abierto",
-        "description": "RPG de mundo abierto con multijugador: explora, progresa y juega con amigos en sesiones compartidas.",
+        "description": "RPG multijugador de mundo abierto: explora, sube de nivel y juega con tus amigos en sesiones compartidas.",
+        "tagline": "Explora un mundo vivo con tus amigos.",
+        "longDescription": "Akaladrom es un RPG multijugador de mundo abierto donde la exploración, la progresión y la cooperación son el centro. Recorre biomas enormes, completa misiones, derrota enemigos poderosos y mejora tu build según tu estilo de juego. Entra en sesiones compartidas con amigos, enfréntate a desafíos en equipo y descubre secretos repartidos por todo el mundo.",
+        "features": {
+          "0": "Exploración de mundo abierto con biomas variados y lugares de interés.",
+          "1": "Sesiones multijugador compartidas para jugar y progresar con amigos.",
+          "2": "Progresión de personaje con niveles, mejoras y elecciones de build.",
+          "3": "Misiones y desafíos con jefes, eventos y recompensas.",
+          "4": "Botín y personalización para adaptar tu combate y tu movilidad."
+        },
         "chips": {
           "pc": "PC",
           "android": "Android"
