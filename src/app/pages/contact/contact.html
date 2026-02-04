@@ -1,1 +1,83 @@
-<p>contact works!</p>
+<a class="back" routerLink="/">
+  <span aria-hidden="true">←</span>
+  {{ 'contact.back' | transloco }}
+</a>
+
+<section class="hero">
+  <div class="info">
+    <p class="kicker">{{ 'contact.kicker' | transloco }}</p>
+    <h1>{{ 'contact.title' | transloco }}</h1>
+
+    <p class="desc">{{ 'contact.lead' | transloco }}</p>
+
+    <div class="badges">
+      <span class="badge">{{ 'contact.badges.reply' | transloco }}</span>
+      <span class="badge">{{ 'contact.badges.support' | transloco }}</span>
+      <a class="badge badge--link" [href]="'mailto:' + toEmail">{{ toEmail }}</a>
+    </div>
+
+    <div class="section">
+      <h2 class="h2">{{ 'contact.blocks.primary.title' | transloco }}</h2>
+      <p class="p">{{ 'contact.blocks.primary.text' | transloco }}</p>
+
+      <div class="cta-row">
+        <a class="btn" [href]="'mailto:' + toEmail">
+          {{ 'contact.cta.email' | transloco }}
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          class="ghost"
+          [href]="'mailto:' + toEmail + '?subject=' + ('contact.mail.subject' | transloco)"
+        >
+          {{ 'contact.cta.prefill' | transloco }}
+        </a>
+      </div>
+
+      <div class="mini">
+        <div class="mini-item">
+          <div class="mini-k">{{ 'contact.meta.email' | transloco }}</div>
+          <div class="mini-v">{{ toEmail }}</div>
+        </div>
+
+        <div class="mini-item">
+          <div class="mini-k">{{ 'contact.meta.response' | transloco }}</div>
+          <div class="mini-v">{{ 'contact.meta.responseValue' | transloco }}</div>
+        </div>
+
+        <div class="mini-item">
+          <div class="mini-k">{{ 'contact.meta.hours' | transloco }}</div>
+          <div class="mini-v">{{ 'contact.meta.hoursValue' | transloco }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="h2">{{ 'contact.blocks.topics.title' | transloco }}</h2>
+
+      <ul class="features">
+        <li>{{ 'contact.blocks.topics.items.0' | transloco }}</li>
+        <li>{{ 'contact.blocks.topics.items.1' | transloco }}</li>
+        <li>{{ 'contact.blocks.topics.items.2' | transloco }}</li>
+        <li>{{ 'contact.blocks.topics.items.3' | transloco }}</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="h2">{{ 'contact.blocks.include.title' | transloco }}</h2>
+      <p class="p">{{ 'contact.blocks.include.text' | transloco }}</p>
+
+      <ul class="features">
+        <li>{{ 'contact.blocks.include.items.0' | transloco }}</li>
+        <li>{{ 'contact.blocks.include.items.1' | transloco }}</li>
+        <li>{{ 'contact.blocks.include.items.2' | transloco }}</li>
+        <li>{{ 'contact.blocks.include.items.3' | transloco }}</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <p class="meta">{{ 'contact.tip.title' | transloco }}</p>
+      <p class="small">{{ 'contact.tip.text' | transloco }}</p>
+    </div>
+  </div>
+</section>

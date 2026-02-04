@@ -1,4 +1,57 @@
-{ 
+{
+  "contact": {
+    "back": "Back",
+    "kicker": "CONTACT",
+    "title": "Contact Reimii",
+    "lead": "For support, proposals, or any question, email us. We aim to reply clearly and quickly.",
+    "badges": { "reply": "Reply in 24–72h", "support": "Support & business" },
+
+    "cta": {
+      "email": "Send email",
+      "prefill": "Email with subject"
+    },
+
+    "meta": {
+      "email": "Email",
+      "response": "Response time",
+      "responseValue": "24–72h (business days)",
+      "hours": "Hours",
+      "hoursValue": "Mon–Fri · 10:00–18:00 (CET)"
+    },
+
+    "blocks": {
+      "primary": {
+        "title": "Primary channel",
+        "text": "Email is the fastest way to reach us. For technical support, include as much detail as possible so we can help in the first reply."
+      },
+      "topics": {
+        "title": "What can you contact us about?",
+        "items": {
+          "0": "App & game support (bugs, suggestions, improvements).",
+          "1": "Collaborations, press and content.",
+          "2": "Licensing, publishing and partnerships.",
+          "3": "Business & shop: orders, issues and billing."
+        }
+      },
+      "include": {
+        "title": "What to include to move faster",
+        "text": "The more context we have, the faster we can respond with a solution.",
+        "items": {
+          "0": "Product name (app/game) and version if you know it.",
+          "1": "Platform and device (PC/Android + model).",
+          "2": "Steps to reproduce + expected result.",
+          "3": "Screenshots or video (if applicable)."
+        }
+      }
+    },
+
+    "tip": {
+      "title": "Tip",
+      "text": "When reporting a bug, write 3–5 clear steps to reproduce it. It speeds things up a lot."
+    },
+
+    "mail": { "subject": "Inquiry from reimii.com" }
+  },
   "navBar": {
     "home": "Home",
     "apps": "Apps",

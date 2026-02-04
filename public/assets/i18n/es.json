@@ -1,4 +1,57 @@
 {
+  "contact": {
+    "back": "Volver",
+    "kicker": "CONTACTO",
+    "title": "Contacta con Reimii",
+    "lead": "Para soporte, propuestas o cualquier consulta, escríbenos. Nos gusta responder claro y rápido.",
+    "badges": { "reply": "Respuesta en 24–72h", "support": "Soporte y negocio" },
+
+    "cta": {
+      "email": "Enviar email",
+      "prefill": "Email con asunto"
+    },
+
+    "meta": {
+      "email": "Email",
+      "response": "Tiempo de respuesta",
+      "responseValue": "24–72h (laborables)",
+      "hours": "Horario",
+      "hoursValue": "L–V · 10:00–18:00 (CET)"
+    },
+
+    "blocks": {
+      "primary": {
+        "title": "Vía principal",
+        "text": "El canal más directo es el email. Si tu mensaje es soporte técnico, intenta incluir el máximo detalle para que podamos ayudarte en el primer reply."
+      },
+      "topics": {
+        "title": "¿Sobre qué puedes escribirnos?",
+        "items": {
+          "0": "Soporte de apps y juegos (errores, sugerencias, mejoras).",
+          "1": "Colaboraciones, prensa y contenido.",
+          "2": "Licencias, publicaciones y partnerships.",
+          "3": "Negocio y tienda: pedidos, incidencias y facturación."
+        }
+      },
+      "include": {
+        "title": "Qué incluir para ir más rápido",
+        "text": "Cuanta más información tengamos, antes podremos responder con una solución.",
+        "items": {
+          "0": "Nombre del producto (app/juego) y versión si la sabes.",
+          "1": "Plataforma y dispositivo (PC/Android + modelo).",
+          "2": "Pasos para reproducir el problema + resultado esperado.",
+          "3": "Capturas o vídeo (si aplica)."
+        }
+      }
+    },
+
+    "tip": {
+      "title": "Consejo",
+      "text": "Si reportas un bug, escribe 3–5 pasos concretos para reproducirlo. Eso acelera muchísimo la solución."
+    },
+
+    "mail": { "subject": "Consulta desde reimii.com" }
+  },
   "navBar": {
     "home": "Inicio",
     "apps": "Apps",
