@@ -1,0 +1,167 @@
+{
+  "contact": {
+    "back": "Back",
+    "kicker": "CONTACT",
+    "title": "Contact Reimii",
+    "lead": "For support, proposals, or any question, email us. We aim to reply clearly and quickly.",
+    "badges": { "reply": "Reply in 24–72h", "support": "Support & business" },
+
+    "cta": {
+      "email": "Send email",
+      "prefill": "Email with subject"
+    },
+
+    "meta": {
+      "email": "Email",
+      "response": "Response time",
+      "responseValue": "24–72h (business days)",
+      "hours": "Hours",
+      "hoursValue": "Mon–Fri · 10:00–18:00 (CET)"
+    },
+
+    "blocks": {
+      "primary": {
+        "title": "Primary channel",
+        "text": "Email is the fastest way to reach us. For technical support, include as much detail as possible so we can help in the first reply."
+      },
+      "topics": {
+        "title": "What can you contact us about?",
+        "items": {
+          "0": "App & game support (bugs, suggestions, improvements).",
+          "1": "Collaborations, press and content.",
+          "2": "Licensing, publishing and partnerships.",
+          "3": "Business & shop: orders, issues and billing."
+        }
+      },
+      "include": {
+        "title": "What to include to move faster",
+        "text": "The more context we have, the faster we can respond with a solution.",
+        "items": {
+          "0": "Product name (app/game) and version if you know it.",
+          "1": "Platform and device (PC/Android + model).",
+          "2": "Steps to reproduce + expected result.",
+          "3": "Screenshots or video (if applicable)."
+        }
+      }
+    },
+
+    "tip": {
+      "title": "Tip",
+      "text": "When reporting a bug, write 3–5 clear steps to reproduce it. It speeds things up a lot."
+    },
+
+    "mail": { "subject": "Inquiry from reimii.com" }
+  },
+  "navBar": {
+    "home": "Home",
+    "apps": "Apps",
+    "games": "Games",
+    "about": "About us",
+    "contact": "Contact us"
+  },
+  "appDetail": {
+    "screenshots": "SCREENSHOTS",
+    "description": "DESCRIPTION",
+    "features": "FEATURES"
+  },
+  "home": {
+    "hero": {
+      "pill": "Games and apps that respect your time",
+      "lead1": "Compact, replayable games. Frictionless utility apps.",
+      "lead2": "Clean, fast, accessible.",
+      "ctaGames": "View Games",
+      "ctaMore": "Learn more",
+      "metricsAria": "Studio metrics"
+    },
+    "stats": {
+      "games": "Apps and Games released",
+      "downloads": "Downloads",
+      "rating": "Average rating",
+      "team": "Creative team"
+    },
+    "featured": {
+      "eyebrow": "FEATURED",
+      "appsLine1": "TOP",
+      "appsLine2": "APPS",
+      "gamesLine1": "TOP",
+      "gamesLine2": "GAMES",
+      "viewAll": "View all"
+    }
+  },
+  "featured": {
+    "availability": {
+      "available": "Available",
+      "comingSoon": "Coming soon",
+      "beta": "Beta"
+    },
+    "apps": {
+      "app-ecopulse": {
+        "category": "Finance",
+        "tagline": "Shared accounts, recurring expenses, and income — everything clear in one dashboard.",
+        "description": "Simple personal and shared finance management: joint accounts, recurring expenses, income, and notes per transaction.",
+        "longDescription": "EcoPulse helps you keep full control of your day-to-day finances. You can create shared accounts to track joint money (both cash and card) and save the reason for each expense so you always remember what it was for. You can also log recurring monthly expenses (subscriptions, rent, bills), add income, and view your balance clearly to make better decisions.",
+        "features": {
+          "0": "Shared accounts for joint money (cash and card).",
+          "1": "Expense reason and quick notes for every transaction.",
+          "2": "Recurring monthly expenses (subscriptions, bills, rent…).",
+          "3": "Income tracking and balance overview.",
+          "4": "Visual summaries by period and category to spot patterns."
+        },
+        "chips": {
+          "android": "Android"
+        }
+      },
+      "app-habit-tracker": {
+        "category": "Habits",
+        "tagline": "Simple routines and clear stats to keep you on track.",
+        "description": "Simple routines, gentle reminders, and clear stats to maintain your momentum.",
+        "longDescription": "Habit Tracker helps you build consistency with a fast, simple flow: create habits, check in daily, and review your streaks without friction. It includes optional reminders and easy-to-understand metrics so you can improve week by week.",
+        "features": {
+          "0": "Quick habit creation with daily or weekly goals.",
+          "1": "Streaks and visual progress with a calendar view.",
+          "2": "Custom reminders and gentle notifications.",
+          "3": "Simple stats to track growth and consistency.",
+          "4": "Tags and notes to personalize each habit."
+        },
+        "chips": {
+          "android": "Android"
+        }
+      },
+      "app-aura-mood-tracker": {
+        "category": "Wellness",
+        "tagline": "Track your mood and uncover patterns with weekly insights.",
+        "description": "Mood tracking with insights: patterns, quick notes, and weekly trends.",
+        "longDescription": "Aura Mood Tracker lets you log your mood in seconds, add notes, and spot trends with weekly summaries. Ideal for understanding patterns, identifying triggers, and improving your wellbeing with simple, private data.",
+        "features": {
+          "0": "Fast mood logging with customizable levels.",
+          "1": "Notes and tags for context (sleep, stress, events…).",
+          "2": "Weekly trends and automatic summaries.",
+          "3": "Search by date and filtering by tags.",
+          "4": "Privacy by design (your data stays yours)."
+        },
+        "chips": {
+          "android": "Android"
+        }
+      }
+    },
+    "games": {
+      "game-akaladrom": {
+        "category": "RPG / Open world",
+        "description": "Open-world multiplayer RPG: explore, level up, and play with friends in shared sessions.",
+        "tagline": "Explore a living world with your friends.",
+        "longDescription": "Akaladrom is an open-world multiplayer RPG where exploration, progression and cooperation are at the core. Travel across vast biomes, complete quests, defeat powerful enemies and upgrade your build to fit your playstyle. Jump into shared sessions with friends, take on challenging encounters together, and uncover secrets hidden throughout the world.",
+        "features": {
+          "0": "Open-world exploration with diverse biomes and points of interest.",
+          "1": "Multiplayer shared sessions to play and progress with friends.",
+          "2": "Character progression with levels, upgrades and build choices.",
+          "3": "Questing and challenges with bosses, events and rewards.",
+          "4": "Loot and customization to adapt your style of combat and traversal."
+        },
+        "chips": {
+          "pc": "PC",
+          "android": "Android"
+        }
+      }
+    }
+  }
+}

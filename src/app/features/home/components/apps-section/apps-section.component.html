@@ -1,0 +1,21 @@
+<section class="apps-section section-spacing">
+  <div class="container-shell">
+    <app-section-title
+      eyebrow="Apps"
+      title="Tools with a polished consumer feel."
+      description="Your apps should feel like complete product launches, not simple utility pages. This structure helps them look stronger and more trustworthy."
+    />
+
+    <div class="apps-section__grid">
+      @for (item of apps; track item.title) {
+        <app-project-card
+          [category]="item.category"
+          [title]="item.title"
+          [description]="item.description"
+          [meta]="item.meta"
+          [route]="item.route"
+        />
+      }
+    </div>
+  </div>
+</section>

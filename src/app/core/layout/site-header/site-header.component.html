@@ -1,0 +1,29 @@
+<header class="site-header">
+  <div class="container-shell">
+    <div class="site-header__row">
+      <a class="site-brand" routerLink="/">
+        <div class="site-brand__mark">R</div>
+
+        <div class="site-brand__text">
+          <span class="site-brand__title">{{ brandName }}</span>
+          <span class="site-brand__subtitle">{{ brandSubtitle }}</span>
+        </div>
+      </a>
+
+      <nav class="site-nav show-md" aria-label="Main navigation">
+        @for (item of navigation; track item.route) {
+          <a
+            class="site-nav__link"
+            [routerLink]="item.route"
+            routerLinkActive="site-nav__link--active"
+            [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+          >
+            {{ item.label }}
+          </a>
+        }
+      </nav>
+
+      <a class="btn btn-primary site-header__cta" routerLink="/games">Explore</a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,17 @@
+<section class="studio-section section-spacing">
+  <div class="container-shell">
+    <div class="studio-section__grid">
+      <app-section-title
+        eyebrow="Studio"
+        title="A cleaner identity, built like a product."
+        description="This redesign helps Reimii feel more established, more premium, and more intentional across every section."
+      />
+
+      <div class="studio-section__cards">
+        @for (item of features; track item.title) {
+          <app-feature-card [title]="item.title" [description]="item.description" />
+        }
+      </div>
+    </div>
+  </div>
+</section>

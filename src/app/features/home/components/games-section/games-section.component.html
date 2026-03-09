@@ -1,0 +1,21 @@
+<section class="games-section section-spacing">
+  <div class="container-shell">
+    <app-section-title
+      eyebrow="Games"
+      title="Featured interactive experiences."
+      description="Present your games as polished products with stronger hierarchy, better spacing, and clearer value."
+    />
+
+    <div class="games-section__grid">
+      @for (item of games; track item.title) {
+        <app-project-card
+          [category]="item.category"
+          [title]="item.title"
+          [description]="item.description"
+          [meta]="item.meta"
+          [route]="item.route"
+        />
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,62 @@
+:root {
+  --color-bg: #07111a;
+  --color-bg-alt: #08131d;
+  --color-surface: #0c1a26;
+  --color-surface-2: #102234;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.14);
+
+  --color-text: #e6f0f7;
+  --color-text-muted: #9eb2c3;
+
+  --color-primary: #17b6c9;
+  --color-secondary: #4f7cff;
+  --color-accent: #7c5cff;
+
+  --font-heading: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --font-body: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
+  --font-weight-heading: 400;
+  --font-weight-body: 400;
+
+  --letter-spacing-heading: 0.02em;
+  --letter-spacing-body: 0;
+
+  --line-height-heading: 1.05;
+  --line-height-body: 1.6;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 4rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.22);
+  --shadow-xl: 0 22px 60px rgba(0, 0, 0, 0.28);
+
+  --container-max-width: 1280px;
+  --container-padding-mobile: 1.5rem;
+  --container-padding-desktop: 2rem;
+
+  --section-padding-mobile: 5rem;
+  --section-padding-desktop: 7rem;
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.35s ease;
+}

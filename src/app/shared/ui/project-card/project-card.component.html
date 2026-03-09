@@ -1,0 +1,15 @@
+<article class="project-card">
+  <div class="project-card__visual">
+    <span class="project-card__badge">{{ category() }}</span>
+  </div>
+
+  <div class="project-card__content">
+    <h3 class="project-card__title">{{ title() }}</h3>
+    <p class="project-card__description">{{ description() }}</p>
+
+    <div class="project-card__footer">
+      <span class="project-card__meta">{{ meta() }}</span>
+      <a class="btn btn-secondary" [routerLink]="route()">View</a>
+    </div>
+  </div>
+</article>
