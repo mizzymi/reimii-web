@@ -12,35 +12,48 @@
   transition:
     transform var(--transition-base),
     border-color var(--transition-base),
-    background-color var(--transition-base);
+    background-color var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   border-color: var(--color-border-strong);
   background: rgba(255, 255, 255, 0.05);
+  box-shadow: var(--shadow-lg);
 }
 
-.project-card__visual {
-  display: flex;
-  align-items: flex-end;
+.project-card__media {
+  position: relative;
   min-height: 220px;
-  padding: 1.25rem;
+  overflow: hidden;
   background:
     linear-gradient(160deg, rgba(23, 182, 201, 0.18), rgba(79, 124, 255, 0.12)),
     linear-gradient(180deg, #11202d 0%, #0b1520 100%);
 }
 
+.project-card__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .project-card__badge {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
   display: inline-flex;
   align-items: center;
   min-height: 32px;
   padding: 0.35rem 0.85rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(7, 17, 26, 0.75);
   color: #ffffff;
   font-size: 0.78rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .project-card__content {

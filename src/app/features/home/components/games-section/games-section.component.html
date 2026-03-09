@@ -2,18 +2,20 @@
   <div class="container-shell">
     <app-section-title
       eyebrow="Games"
-      title="Featured interactive experiences."
-      description="Present your games as polished products with stronger hierarchy, better spacing, and clearer value."
+      title="Two game worlds with stronger presentation."
+      description="Akaladrom and Epicore TCG should be shown like premium products, with cleaner visuals, stronger hierarchy, and more confident project storytelling."
     />
 
-    <div class="games-section__grid">
+    <div class="games-section__grid games-section__grid--two">
       @for (item of games; track item.title) {
         <app-project-card
           [category]="item.category"
           [title]="item.title"
           [description]="item.description"
           [meta]="item.meta"
-          [route]="item.route"
+          [route]="'/games/' + item.slug"
+          [image]="item.image"
+          [alt]="item.alt"
         />
       }
     </div>

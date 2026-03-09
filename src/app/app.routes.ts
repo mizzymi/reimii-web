@@ -1,4 +1,10 @@
 import { Routes } from '@angular/router';
+import { GamesPageComponent } from './features/games/pages/games-page.component';
+import { AppsPageComponent } from './features/apps/pages/apps-page.component';
+import { HomePageComponent } from './features/home/pages/home-page.component';
+import { StudioPageComponent } from './features/studio/pages/studio-page.component';
+import { GameDetailPageComponent } from './features/games/pages/details/game-detail-page.component';
+import { AppDetailPageComponent } from './features/apps/pages/details/app-detail-page.component';
 
 /**
  * Main application routes.
@@ -11,23 +17,37 @@ export const routes: Routes = [
         children: [
             {
                 path: '',
-                loadComponent: () =>
-                    import('./features/home/pages/home-page.component').then((m) => m.HomePageComponent),
-            },
-            {
-                path: 'games',
-                loadComponent: () =>
-                    import('./features/games/pages/games-page.component').then((m) => m.GamesPageComponent),
+                component: HomePageComponent
             },
             {
                 path: 'apps',
-                loadComponent: () =>
-                    import('./features/apps/pages/apps-page.component').then((m) => m.AppsPageComponent),
+                children: [
+                    {
+                        path: '',
+                        component: AppsPageComponent,
+                    },
+                    {
+                        path: ':slug',
+                        component: AppDetailPageComponent,
+                    },
+                ],
+            },
+            {
+                path: 'games',
+                children: [
+                    {
+                        path: '',
+                        component: GamesPageComponent,
+                    },
+                    {
+                        path: ':slug',
+                        component: GameDetailPageComponent,
+                    },
+                ],
             },
             {
                 path: 'studio',
-                loadComponent: () =>
-                    import('./features/studio/pages/studio-page.component').then((m) => m.StudioPageComponent),
+                component: StudioPageComponent
             },
         ],
     },

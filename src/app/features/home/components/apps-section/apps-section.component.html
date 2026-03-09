@@ -2,8 +2,8 @@
   <div class="container-shell">
     <app-section-title
       eyebrow="Apps"
-      title="Tools with a polished consumer feel."
-      description="Your apps should feel like complete product launches, not simple utility pages. This structure helps them look stronger and more trustworthy."
+      title="Practical mobile apps with cleaner, faster flows."
+      description="EcoPulse, Aura Mood Tracker, and Habit Tracker should feel useful, polished, and easier to trust through stronger visual structure and better product framing."
     />
 
     <div class="apps-section__grid">
@@ -13,7 +13,9 @@
           [title]="item.title"
           [description]="item.description"
           [meta]="item.meta"
-          [route]="item.route"
+          [route]="'/apps/' + item.slug"
+          [image]="item.image"
+          [alt]="item.alt"
         />
       }
     </div>

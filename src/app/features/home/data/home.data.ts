@@ -1,94 +1,44 @@
 /**
- * Hero section content.
+ * Hero section content based on the public Reimii positioning.
  */
 export const HOME_HERO = {
     badge: 'Independent studio',
-    title: 'We design games and apps with a polished, playful edge.',
+    title: 'Games and apps built to feel clearer, faster, and easier to use.',
     description:
-        'Reimii builds digital experiences that feel modern, fast, and memorable. Every interface is crafted to feel clearer, sharper, and more intentional.',
+        'Reimii creates video games and mobile apps with a strong focus on clarity, performance, accessibility, and polished user experience.',
     primaryAction: {
-        label: 'Explore games',
+        label: 'View games',
         route: '/games',
     },
     secondaryAction: {
-        label: 'See the studio',
-        route: '/studio',
+        label: 'View apps',
+        route: '/apps',
     },
 };
 
 /**
- * Studio feature list.
+ * Studio feature list aligned with the current public positioning.
  */
 export const STUDIO_FEATURES = [
     {
-        title: 'Modular structure',
-        description: 'A feature-based architecture ready to grow without turning the codebase into chaos.',
+        title: 'Clarity first',
+        description:
+            'Products are designed to feel readable, intuitive, and easy to understand from the first interaction.',
     },
     {
-        title: 'Sharper presentation',
-        description: 'A cleaner visual rhythm that makes the studio feel more premium and more established.',
+        title: 'Fast experiences',
+        description:
+            'Performance, responsiveness, and visual rhythm are treated as core product qualities.',
     },
     {
-        title: 'Reusable UI',
-        description: 'Shared components reduce repetition and keep the product language consistent.',
+        title: 'Accessible design',
+        description:
+            'Games and apps are shaped to feel approachable, usable, and comfortable for a wider audience.',
     },
     {
-        title: 'Product-first thinking',
-        description: 'Games and apps are presented like polished launches instead of plain lists of links.',
-    },
-];
-
-/**
- * Featured games content.
- */
-export const FEATURED_GAMES = [
-    {
-        category: 'Game',
-        title: 'Featured Game One',
-        description: 'A stylish interactive experience with clear visual direction and a modern presentation.',
-        meta: 'Fast · Visual · Playful',
-        route: '/games',
-    },
-    {
-        category: 'Game',
-        title: 'Featured Game Two',
-        description: 'Designed with readability, rhythm, and a premium player-facing feel.',
-        meta: 'Responsive · Clean · Fun',
-        route: '/games',
-    },
-    {
-        category: 'Game',
-        title: 'Featured Game Three',
-        description: 'A concept-focused project presented with stronger hierarchy and clearer identity.',
-        meta: 'Focused · Premium · Smart',
-        route: '/games',
-    },
-];
-
-/**
- * Featured apps content.
- */
-export const FEATURED_APPS = [
-    {
-        category: 'App',
-        title: 'Featured App One',
-        description: 'A sleek utility-focused app designed to feel practical, elegant, and trustworthy.',
-        meta: 'Useful · Elegant · Practical',
-        route: '/apps',
-    },
-    {
-        category: 'App',
-        title: 'Featured App Two',
-        description: 'Built with a stronger product feel and cleaner interface communication.',
-        meta: 'Reliable · Smooth · Clean',
-        route: '/apps',
-    },
-    {
-        category: 'App',
-        title: 'Featured App Three',
-        description: 'A digital tool that balances simplicity, clarity, and visual confidence.',
-        meta: 'Minimal · Sharp · Scalable',
-        route: '/apps',
+        title: 'Clean mobile utility',
+        description:
+            'Apps focus on practical value with lighter flows, less friction, and stronger usability.',
     },
 ];
 
@@ -97,9 +47,9 @@ export const FEATURED_APPS = [
  */
 export const HOME_CTA = {
     eyebrow: 'Reimii',
-    title: 'Build a stronger first impression.',
+    title: 'From game worlds to useful mobile tools, everything starts with better design.',
     description:
-        'A better site structure helps the studio feel more credible, more premium, and easier to trust from the first visit.',
+        'Explore Akaladrom and Epicore TCG, alongside apps like EcoPulse, Habit Tracker, and Aura Mood Tracker — all shaped around clear interfaces, fast flows, and more accessible digital experiences.',
     primaryAction: {
         label: 'View games',
         route: '/games',

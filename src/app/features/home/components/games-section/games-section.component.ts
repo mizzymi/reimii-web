@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ProjectCardComponent } from '../../../../shared/ui/project-card/project-card.component';
 import { SectionTitleComponent } from '../../../../shared/ui/section-title/section-title.component';
-import { FEATURED_GAMES } from '../../data/home.data';
+import { games } from '../../../../core/data/data';
 
 /**
  * Featured games section.
@@ -15,5 +15,5 @@ import { FEATURED_GAMES } from '../../data/home.data';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GamesSectionComponent {
-    protected readonly games = FEATURED_GAMES;
+    protected readonly games = games;
 }

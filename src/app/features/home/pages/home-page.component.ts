@@ -34,7 +34,7 @@ export class HomePageComponent {
     constructor() {
         this.seoService.setPageMeta(
             'Home',
-            'Reimii is an independent studio focused on polished games, useful apps, and premium digital experiences.',
+            'Reimii creates video games and mobile apps focused on clear, fast, accessible experiences and utility without friction.',
         );
     }
 }

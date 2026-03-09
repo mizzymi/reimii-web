@@ -17,4 +17,13 @@ export class SiteHeaderComponent {
     protected readonly brandName = SITE_CONFIG.brandName;
     protected readonly brandSubtitle = SITE_CONFIG.brandSubtitle;
     protected readonly navigation = SITE_CONFIG.navigation;
+    isMobileMenuOpen = false;
+
+    toggleMobileMenu(): void {
+        this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    }
+
+    closeMobileMenu(): void {
+        this.isMobileMenuOpen = false;
+    }
 }

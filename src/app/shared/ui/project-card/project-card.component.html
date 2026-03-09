@@ -1,5 +1,7 @@
 <article class="project-card">
-  <div class="project-card__visual">
+  <div class="project-card__media">
+    <img class="project-card__image" [src]="image()" [alt]="alt()" loading="lazy" />
+
     <span class="project-card__badge">{{ category() }}</span>
   </div>
 

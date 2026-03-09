@@ -18,4 +18,6 @@ export class ProjectCardComponent {
     readonly description = input.required<string>();
     readonly meta = input.required<string>();
     readonly route = input.required<string>();
+    readonly image = input.required<string>();
+    readonly alt = input.required<string>();
 }
